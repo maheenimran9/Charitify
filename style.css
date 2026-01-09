@@ -618,10 +618,9 @@ body {
     line-height: 1.6;
 }
 
-/* Founder Specific Card */
 .founder-card {
     padding: 40px 30px;
-    border: 1px dashed #ddd; /* Screenshot mein border dashed hai */
+    border: 1px dashed #ddd; 
 }
 
 .founder-img {
@@ -664,6 +663,35 @@ body {
     color: #fff !important;
 }
 
+/* =========================
+FEATURED SECTION 
+========================= */
+.featured-sec{
+    max-width: 1200px;
+    max-width: 0 auto;
+}
+
+.feat-container{
+    background-image: url(./assest/featured-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 150px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.feat-text{
+   text-align: center;
+   margin: 0 auto;
+   color: #fff;
+}
+
+.feat-btn{
+    
+}
 /* =========================
    VOLUNTEER SECTION 
 ===========================*/
