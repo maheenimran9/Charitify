@@ -1158,6 +1158,80 @@ a {
 }
 
 /* =========================
+   COMMENTS SECTION 
+========================= */
+.com-sec{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.com-container{
+    padding: 20px 30px;
+}
+
+.com-text{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.com-text h1{
+    font-family: var(--bold-font);
+    font-weight: 900;
+    font-size: 38px;
+}
+
+.com-text p{ font-family: var(--main-font);}
+
+.testimonial-item {
+    background-color: #fafafa;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.testimonial-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #fff;
+}
+
+.testi-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px; 
+}
+
+.testi-footer img {
+    width: 60px !important;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffbf5e;
+}
+
+.testi-info h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.testi-info span {
+    font-size: 14px;
+    color: #ffbf5e; 
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .com-text h1 {
+        font-size: 30px;
+    }
+}
+/* =========================
    RESPONSIVE LOGIC (Mobile & Tablet)
 ========================= */
 
