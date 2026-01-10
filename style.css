@@ -1324,6 +1324,72 @@ a {
 }
 
 /* =========================
+   LOGO SECTION 
+========================= */
+.logo-sec {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-slider {
+    width: 100%;
+    overflow: hidden; 
+    position: relative;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: calc(200px * 14); 
+    animation: scroll 30s linear infinite; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-track li {
+    width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-track img {
+    width: 100px; 
+    filter: grayscale(100%); 
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.logo-track img:hover {
+    filter: grayscale(0%); 
+    opacity: 1;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 7)); } 
+}
+
+@media (max-width: 768px) {
+    .logo-track img {
+        width: 80px;
+    }
+    .logo-track li {
+        width: 150px;
+    }
+    @keyframes scroll {
+        100% { transform: translateX(calc(-150px * 7)); }
+    }
+}
+
+/* =========================
+   RESPONSIVE LOGIC (Mobile & Tablet)
+========================= */
+
+/* =========================
    RESPONSIVE LOGIC (Mobile & Tablet)
 ========================= */
 
