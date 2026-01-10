@@ -1407,11 +1407,14 @@ footer {
 .foot-col h4 {
     color: #fff;
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 900;
     position: relative;
+    font-family: var(--bold-font);
 }
 
 .foot-col p {
+    font-family: var(--main-font);
     line-height: 1.6;
     font-size: 14px;
 }
@@ -1422,17 +1425,20 @@ footer {
 }
 
 .foot-col ul li {
+    font-family: var(--pre-main-font);
     margin-bottom: 15px;
     font-size: 14px;
 }
 
 .foot-col ul li span {
+    font-family: var(--pre-main-font);
     display: block;
     color: #666;
     font-size: 12px;
 }
 
 .social-links a {
+    font-family: var(--pre-main-font);
     color: #f7941d;
     margin-right: 15px;
     font-size: 16px;
@@ -1454,13 +1460,31 @@ footer {
     margin-left: auto;
     margin-right: auto;
     font-size: 13px;
+    font-family: var(--pre-main-font);
 }
 
 .bottom-links a {
+    font-family: var(--pre-main-font);
     color: #999;
     text-decoration: none;
     margin-left: 20px;
 }
+
+.contact-info i{ color: rgb(175, 175, 175); transition: 0.4s ease;}
+
+.contact-info i:hover{ 
+    color: var(--primary-yellow);
+    transform: scale(1.2);
+}
+
+.social-links i:hover{
+    transition: 1.8s ease;
+}
+
+.social-links i:hover{
+    transform: scale(1.2);
+}
+
 
 @media (max-width: 768px) {
     .foot-container {
